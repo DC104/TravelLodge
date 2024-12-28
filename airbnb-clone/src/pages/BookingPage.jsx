@@ -11,13 +11,19 @@ export default function BookingPage(){
         if(id){
         axios.get('/bookings' ).then(response => {
            const foundBooking = response.data.find(({_id}) => _id === id);
+    
         });
         if(foundBooking){
             setBooking(foundBooking);
         }
         }
     }, [id] )
+    if(!booking){
+        return '';
+    }
     return(
-     <div>single Booking : {id}</div>
+     <div>
+        Hi
+     </div>
     );
 }

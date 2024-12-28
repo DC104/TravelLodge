@@ -44,10 +44,11 @@ export default function BookingsPage() {
                         const place = places[booking.place];
                         return (
                             <Link 
-                                to={`/bookings/${booking._id}`} 
+                                to={`/account/booking/${booking._id}`} 
                                 key={booking._id} 
                                 className="block booking-card flex items-start gap-6 p-6 bg-white border rounded-lg shadow-lg"
                             >
+            
                                 {place?.photos?.length > 0 ? (
                                     <PlaceImg place={place} index={0} className="rounded-xl w-48 h-48 object-cover" />
                                 ) : (

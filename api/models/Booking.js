@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 const bookingSchema = new mongoose.Schema({
     place: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Place', // Assuming you have a Place model
+        ref: 'Place', 
         required: true
     },
     user: {type:mongoose.Schema.Types.ObjectId , required:true},
