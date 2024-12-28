@@ -19,6 +19,7 @@ dotenv.config();
 const app = express();
 const bcryptSalt = bcrypt.genSaltSync(10);
 const jwtSecret = process.env.JWT_SECRET;
+const port = process.env.PORT || 5000;
 
 // Create __dirname equivalent
 const __filename = fileURLToPath(import.meta.url);
@@ -318,6 +319,6 @@ app.get('/bookings', async (req, res) => {
 
 
 
-app.listen(5000, () => {
+app.listen(port, () => {
   console.log('Server is running on port 5000');
 });
