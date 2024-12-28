@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const testRegistration = async () => {
   try {
-    const response = await axios.post('http://localhost:5000/register', {
+    const response = await axios.post('https://travellodge-3q9e.onrender.com/register', {
       name: 'Test User',
       email: 'test@example.com',
       password: 'password123',
