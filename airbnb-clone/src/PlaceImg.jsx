@@ -6,7 +6,7 @@ export default function PlaceImg({ place, index = 0, className = '' }) {
     }
 
     // Construct the image URL by appending the photo path to the base URL
-    const imageUrl = `http://localhost:5000/${place.photos[index]}`;
+    const imageUrl = `https://travellodge-3q9e.onrender.com/${place.photos[index]}`;
 
     console.log(`Loading image from URL: ${imageUrl}`); // Debug log
 
