@@ -12,7 +12,7 @@ import PlacesFormPage from './pages/PlacesFormPage';
 import PlacePage from './pages/PlacePage';
 import BookingsPage from './pages/BookingsPage';
 import BookingPage from './pages/BookingPage';
-axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = 'https://travellodge-3q9e.onrender.com';
 axios.defaults.withCredentials = true;
 
 function App() {
