@@ -23,7 +23,7 @@ export default function PhotosUploader({ addedPhotos = [], onChange }) {
     for (let i = 0; i < files.length; i++) {
       data.append('photos', files[i]);
     }
-    axios.post('http://localhost:5000/uploads/', data, {
+    axios.post('https://travellodge-3q9e.onrender.com/uploads/', data, {
       headers: { 'Content-Type': 'multipart/form-data' },
     })
     .then(response => {
@@ -68,7 +68,7 @@ export default function PhotosUploader({ addedPhotos = [], onChange }) {
           <div className="relative group" key={index}>
             <img
               className="rounded-xl w-full h-32 object-cover"
-              src={`http://localhost:5000/${link}`}
+              src={`https://travellodge-3q9e.onrender.com/${link}`}
               alt={`Uploaded photo ${index}`}
             />
             <button
