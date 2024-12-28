@@ -37,7 +37,7 @@ app.use(cookieParser());
 app.use('/uploads', express.static(uploadsDir));
 app.use(cors({
   credentials: true,
-  origin: ['http://127.0.0.1:5173', 'http://localhost:5173'],
+  origin: ['https://travellodge-frontend.onrender.com', 'https://travellodge-frontend.onrender.com'],
 }));
 
 // Connect to MongoDB
