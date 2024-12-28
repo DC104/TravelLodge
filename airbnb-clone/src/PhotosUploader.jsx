@@ -8,7 +8,7 @@ export default function PhotosUploader({ addedPhotos = [], onChange }) {
   async function addPhotoByLink(ev) {
     ev.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/upload-by-link/', { link: photoLink });
+      const response = await axios.post('https://travellodge-3q9e.onrender.com/upload-by-link/', { link: photoLink });
       const filePath = response.data.filePath;
       onChange(prev => [...(prev || []), filePath]);
       setPhotoLink('');
