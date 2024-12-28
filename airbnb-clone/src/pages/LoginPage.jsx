@@ -4,7 +4,7 @@ import { useContext, useState } from "react";
 import { UserContext } from "../UserContext";
 
 // Configure Axios base URL
-axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = 'https://travellodge-3q9e.onrender.com';
 axios.defaults.withCredentials = true;
 
 export default function LoginPage() {
